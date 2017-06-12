@@ -1,0 +1,21 @@
+\chapter{Continuous Opertaion}
+After the initializationVO is executed the visual odometry pipeline uses new sequence of images to update the pose of the camera. 
+
+\section{State Propagation}
+
+\subsection{Feature extraction}
+
+\subsection{Feature Tracking}
+
+\section{Triangulating New Landmarks}
+
+\section{Pose Estimation}
+Pose is estimated using using nonlinear optimization of the reprojection error. 
+
+
+\subsection{Outlier Rejection}
+Outlier rejection was done using RANSAC.
+
+
+\section{Bundle Adjustment}
+Full bundle adjustment of the pose and landmarks were applied to prevent the visual odometry from having scale drift. Bundle adjustment is applied as a window of 3 consecutive frames with one frame overlapping. A window based approach was implemented as a more computationally feasible operation. 
