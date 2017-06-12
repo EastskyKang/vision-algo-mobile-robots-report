@@ -218,3 +218,9 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+# texpad
+.texpadtmp
+
+# DS_Store
+.DS_Store
